@@ -1,3 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryBackground: #212222;
+  --secondaryBackground: #2f3030;
+  --primaryColor: #e0a80d;
+  --greyDark: #7d8792;
+  --headingColor: #2d2e2e;
+  --white: #fff;
+  --black: #000;
+  --sliver: #bac8d3;
+}
+body {
+  background-color: var(--headingColor);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: var(--greyDark);
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: var(--primaryColor);
+}
+p {
+  color: var(--sliver);
+  font-size: 15px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 .App {
   text-align: center;
 }
@@ -6,6 +50,15 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+
+section {
+  display: flex;
+  height: 90vh;
+}
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -34,5 +87,297 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+
+
+/****************   Header    ********************/
+
+.header {
+  background-color: #fff;
+  padding: 10px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.nav a.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/*********  Footer  ************/
+#footer{
+  padding: 60px 0;
+}
+#footer div{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  color: #e0a80d;
+}
+
+/*************************  Hero/Home Section    **********************/
+.hero {
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../public/img/bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 90vh;
+}
+.heroContent {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.button {
+    background: none;
+    /* background-color: #e0a80d; */
+    border: 2px solid #e0a80d;
+    border-radius: 50px;
+    color: #fff;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 20px;
+    outline: none;
+    padding: 15px 50px;
+}
+
+.buttonfilled {
+  background-color: #e0a80d;
+   /* border: 0px solid #e0a80d; */
+  border-radius: 50px;
+  color: #fff;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 20px;
+  outline: none;
+  padding: 15px 50px;
+}
+
+
+/***********************    About    ********************/
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20%; /* Creates 20% space from left and right */
+  gap: 40px; /* Optional spacing between left and right blocks */
+}
+
+.left img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.right {
+  flex: 1;
+  text-align: left;
+}
+
+.right h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.right p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+}
+
+button.primaryBtn {
+  background-color: #007BFF;
+  color: white;
+}
+
+
+/*********************************  Services     ***************************/
+#serv {
+  height: 90vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20%; /* No extra space, purely centered */
+
+    box-sizing: border-box;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ser_box {
+  background-color: #212222;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  min-width: 300px;
+}
+
+
+.serv-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+  justify-items: center;
+}
+
+.left.servicons{
+  font-size: 2rem;
+  color: var(--primaryColor);
+}
+
+.services .right h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 20px !important;
+}
+
+
+
+/**************************  Blog  ***************************/
+section#blog {
+  padding: 60px 10%; /* space from top and sides */
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.blogbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogbox h2, .services h2  {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.blog-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap; /* keep all 3 in one row */
+}
+
+#blog .ser_box {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  min-width: 300px;
+  flex-direction: column;
+}
+
+.ser_box img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+#blog  .right h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+
+/* Responsive menu: hide main nav on small screens */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hideMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .toggle {
+    display: inline-block;
   }
 }
