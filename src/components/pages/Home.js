@@ -4,6 +4,9 @@ import Typewriter from "typewriter-effect"
 import About from './About';
 import Services from './Services';
 import Blog from './Blog';
+import Contact from './Contact';
+import Testimonials from './Testimonials';
+import Portfolio from './Portfolio';
 
 const Home = () => {
   return (
@@ -32,7 +35,10 @@ const Home = () => {
       </section>
       <About/>
       <Services />
+      <Portfolio />
+      <Testimonials />
       <Blog/>
+      <Contact />
     </>
   );
 }

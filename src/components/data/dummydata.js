@@ -36,7 +36,7 @@ export const navlink = [
 export const home = [
   {
     text: "Hello I'M",
-    name: "Sunil Sharma",
+    name: "Lorem Ipsum",
     post: "Wed Developer",
     design: "UI / UX DESIGNER",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
@@ -119,42 +119,42 @@ export const project = [
 export const portfolio = [
   {
     id: 1,
-    cover: "../images/port/port1.jpg",
+    cover: "../img/pic.jpg",
     name: "Brand",
     category: "marketing",
     title: "Brex Logo",
   },
   {
     id: 2,
-    cover: "../images/port/port2.jpg",
+    cover: "../img/pic.jpg",
     name: "Brand",
     category: "design",
     title: "Brex Logo",
   },
   {
     id: 3,
-    cover: "../images/port/port3.jpg",
+    cover: "../img/pic.jpg",
     name: "Brand",
     category: "development",
     title: "Brex Logo",
   },
   {
     id: 4,
-    cover: "../images/port/port4.jpg",
+    cover: "../img/pic.jpg",
     name: "Brand",
-    category: "marketing",
+    category: "development",
     title: "Brex Logo",
   },
   {
     id: 5,
-    cover: "../images/port/port5.jpg",
+    cover: "../img/pic.jpg",
     name: "Brand",
     category: "design",
     title: "Brex Logo",
   },
   {
     id: 6,
-    cover: "../images/port/port6.jpg",
+    cover: "../img/pic.jpg",
     name: "Brand",
     category: "development",
     title: "Brex Logo",
@@ -165,21 +165,21 @@ export const testimonials = [
   {
     id: 1,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-1.png",
+    image: "./img/pic.jpg",
     name: "Alamin Musa",
     post: "Front End Developer",
   },
   {
     id: 2,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-2.png",
+    image: "./img/pic.jpg",
     name: "Alex Ander",
     post: "Back End Developer",
   },
   {
     id: 3,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-3.png",
+    image: "./img/pic.jpg",
     name: "GorkCoder",
     post: "React Developer",
   },
@@ -215,18 +215,18 @@ export const blog = [
 export const contact = [
   {
     icon: <AddLocationAltOutlined />,
-    text1: "2651 Main Street, Suit 124",
-    text2: "Seattle, WA, 98101",
+    text1: "Lorem Ipsum has been standard",
+    text2: "Hd, TA, 580028",
   },
   {
     icon: <PhoneIphone />,
     text1: "0123456789",
-    text2: "0345627891",
+    text2: "0987654321",
   },
   {
     icon: <EmailOutlined />,
-    text1: "hello@thetheme.io",
-    text2: "inf0@brex-theme.io",
+    text1: "hello@test.com",
+    text2: "inf0@test.com",
   },
 ]
 
